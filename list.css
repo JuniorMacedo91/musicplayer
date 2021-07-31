@@ -1,0 +1,67 @@
+#list-container{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#headphone-pic{
+    width: 450px;
+    transform: scaleX(-1);
+    margin-top: -6rem;
+}
+
+#back-list-btn{
+    position: absolute;
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--rose-red);
+    z-index: 1;
+}
+
+#title{
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: var(--rose-red);
+    transform: translateY(-7rem);
+}
+
+ul{
+    max-height: 60%;
+    transform: translateY(-6rem);
+    backdrop-filter: blur(30px);
+    overflow-y:scroll;
+}
+
+ul::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4rem;
+    padding: 3px 10px;
+    margin: 5px 0;
+}
+
+li:hover{
+    border-radius: 4rem;
+    background-color: rgba(198, 198, 198, 0.2);
+}
+
+li > img{
+    width: 55px;
+    padding: 2px;
+    border: 1.5px solid var(--gray);
+    border-radius: 50%;
+}
+
+.music-content{
+    font-size: 14px;
+}
+
+.playbtn{
+    font-size: 2rem;
+    color: var(--rose-red);
+}

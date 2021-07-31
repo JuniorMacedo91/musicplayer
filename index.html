@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="list.css">
+    <script src="https://kit.fontawesome.com/8c5bd3d475.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <img id="bgimage-light" src="./assets/images/white-fone.png" alt="">
+        <div id="container-wrapper">
+
+            <div id="list-darkmode-box">
+                <button id="list-btn"><i class="fas fa-list-ul"></i></button>
+                <p id="time">2:32</p>
+                <label for="dark-mode-btn">
+                    <i style="color: #FE0341;" class="fas fa-moon"></i>
+                    <input type="checkbox" name="" id="dark-mode-btn" aria-label="dark-mode-btn" hidden>
+                </label>
+            </div>
+
+            <div id="circle-line">
+                <div id="circle-picture-div">
+                    <img id="singer-picture" src="./assets/images/rbd.jpg" alt="Singer picture">
+                    <button id="play-btn"><i class="fas fa-play-circle"></i></button>
+                </div>
+            </div>
+
+            <div id="song-name-box">    
+                <p id="song-name">Que fue del amor</p>
+                <p id="artist-name">RBD</p>
+            </div>
+
+            <div id="controls-and-range-box">
+                <button id="rewind-btn"><i class="fas fa-backward"></i></button>
+                <button id="foward-btn"><i class="fas fa-forward"></i></button>
+                <input id="song-range" type="range" name="song-range" id="song-range" min="0" max="0">
+                <button id="randon-btn"><i class="fas fa-random"></i></button>
+                <button id="loop-btn"><i class="fas fa-sync"></i></button>
+                <button id="lyrics-btn"><i class="fab fa-amilia"></i></i></button>
+            </div>
+
+        </div>
+    </div>
+    <div id="list-container">
+        <button id="back-list-btn"><i class="fas fa-angle-double-down"></i></button>
+        <img id="headphone-pic" src="./assets/images/white-fone.png" alt="">
+        <p id="title"> Playlist</p>
+
+        <ul>
+            <li>
+                <img src="./assets/images/rbd.jpg" alt="Singer picture">
+                <div class="music-content">
+                    <p class="song-name">Que fue del amor</p>
+                    <p class="artist-name">RBD</p>
+                </div>
+                <button class="playbtn"><i class="fas fa-play-circle"></i></button>
+            </li>
+            <li>
+                <img src="./assets/images/rbd.jpg" alt="Singer picture">
+                <div class="music-content">
+                    <p class="song-name">Que fue del amor</p>
+                    <p class="artist-name">RBD</p>
+                </div>
+                <button class="playbtn"><i class="fas fa-play-circle"></i></button>
+            </li>
+            <li>
+                <img src="./assets/images/rbd.jpg" alt="Singer picture">
+                <div class="music-content">
+                    <p class="song-name">Que fue del amor</p>
+                    <p class="artist-name">RBD</p>
+                </div>
+                <button class="playbtn"><i class="fas fa-play-circle"></i></button>
+            </li>
+            <li>
+                <img src="./assets/images/rbd.jpg" alt="Singer picture">
+                <div class="music-content">
+                    <p class="song-name">Que fue del amor</p>
+                    <p class="artist-name">RBD</p>
+                </div>
+                <button class="playbtn"><i class="fas fa-play-circle"></i></button>
+            </li>
+            <li>
+                <img src="./assets/images/rbd.jpg" alt="Singer picture">
+                <div class="music-content">
+                    <p class="song-name">Que fue del amor</p>
+                    <p class="artist-name">RBD</p>
+                </div>
+                <button class="playbtn"><i class="fas fa-play-circle"></i></button>
+            </li>
+            <li>
+                <img src="./assets/images/rbd.jpg" alt="Singer picture">
+                <div class="music-content">
+                    <p class="song-name">Que fue del amor</p>
+                    <p class="artist-name">RBD</p>
+                </div>
+                <button class="playbtn"><i class="fas fa-play-circle"></i></button>
+            </li>
+        </ul>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
