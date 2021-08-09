@@ -5,103 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicPlayer</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="list.css">
-    <script src="https://kit.fontawesome.com/8c5bd3d475.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <div id="container">
-        <img id="bgimage-light" src="./assets/images/white-fone.png" alt="">
+        <img id="bgImage-home" src="./assets/images/white-fone.png" alt="">
         <div id="container-wrapper">
 
-            <div id="list-darkmode-box">
-                <button id="list-btn"><i class="fas fa-list-ul"></i></button>
-                <p id="time">2:32</p>
-                <label for="dark-mode-btn">
-                    <i style="color: #FE0341;" class="fas fa-moon"></i>
-                    <input type="checkbox" name="" id="dark-mode-btn" aria-label="dark-mode-btn" hidden>
-                </label>
+            <div id="top-icons">
+                <i id="list-btn" class="fas fa-list-ul"></i>
+                <p id="duration">0:00</p>
+                <i id="darkMode-btn" class="fas fa-moon"></i>
             </div>
 
             <div id="circle-line">
                 <div id="circle-picture-div">
-                    <img id="singer-picture" src="./assets/images/rbd.jpg" alt="Singer picture">
-                    <button id="play-btn"><i class="fas fa-play-circle"></i></button>
+                    <img id="singer-picture" src="./assets/images/anitta.jpg" alt="Singer picture">
+                    <i class="play-btn fas fa-play-circle"></i>
                 </div>
             </div>
 
             <div id="song-name-box">    
-                <p id="song-name">Que fue del amor</p>
-                <p id="artist-name">RBD</p>
+                <p id="song-name">Movimento da sanfoninha</p>
+                <p id="artist-name">Anitta</p>
             </div>
 
             <div id="controls-and-range-box">
-                <button id="rewind-btn"><i class="fas fa-backward"></i></button>
-                <button id="foward-btn"><i class="fas fa-forward"></i></button>
+                <i id="rewind-btn" class="fas fa-backward"></i>
+                <i id="foward-btn" class="fas fa-forward"></i>
                 <input id="song-range" type="range" name="song-range" id="song-range" min="0" max="0">
-                <button id="randon-btn"><i class="fas fa-random"></i></button>
-                <button id="loop-btn"><i class="fas fa-sync"></i></button>
-                <button id="lyrics-btn"><i class="fab fa-amilia"></i></i></button>
+                <i id="randon-btn" class="fas fa-random"></i>
+                <i id="loop-btn" class="fas fa-sync"></i>
+                <i id="lyrics-btn" class="fab fa-amilia"></i>
+            </div>
+
+            <div class="list-container">
+                <ul id="music_list"></ul>
             </div>
 
         </div>
     </div>
-    <div id="list-container">
-        <button id="back-list-btn"><i class="fas fa-angle-double-down"></i></button>
-        <img id="headphone-pic" src="./assets/images/white-fone.png" alt="">
-        <p id="title"> Playlist</p>
-
-        <ul>
-            <li>
-                <img src="./assets/images/rbd.jpg" alt="Singer picture">
-                <div class="music-content">
-                    <p class="song-name">Que fue del amor</p>
-                    <p class="artist-name">RBD</p>
-                </div>
-                <button class="playbtn"><i class="fas fa-play-circle"></i></button>
-            </li>
-            <li>
-                <img src="./assets/images/rbd.jpg" alt="Singer picture">
-                <div class="music-content">
-                    <p class="song-name">Que fue del amor</p>
-                    <p class="artist-name">RBD</p>
-                </div>
-                <button class="playbtn"><i class="fas fa-play-circle"></i></button>
-            </li>
-            <li>
-                <img src="./assets/images/rbd.jpg" alt="Singer picture">
-                <div class="music-content">
-                    <p class="song-name">Que fue del amor</p>
-                    <p class="artist-name">RBD</p>
-                </div>
-                <button class="playbtn"><i class="fas fa-play-circle"></i></button>
-            </li>
-            <li>
-                <img src="./assets/images/rbd.jpg" alt="Singer picture">
-                <div class="music-content">
-                    <p class="song-name">Que fue del amor</p>
-                    <p class="artist-name">RBD</p>
-                </div>
-                <button class="playbtn"><i class="fas fa-play-circle"></i></button>
-            </li>
-            <li>
-                <img src="./assets/images/rbd.jpg" alt="Singer picture">
-                <div class="music-content">
-                    <p class="song-name">Que fue del amor</p>
-                    <p class="artist-name">RBD</p>
-                </div>
-                <button class="playbtn"><i class="fas fa-play-circle"></i></button>
-            </li>
-            <li>
-                <img src="./assets/images/rbd.jpg" alt="Singer picture">
-                <div class="music-content">
-                    <p class="song-name">Que fue del amor</p>
-                    <p class="artist-name">RBD</p>
-                </div>
-                <button class="playbtn"><i class="fas fa-play-circle"></i></button>
-            </li>
-        </ul>
-    </div>
 </body>
-    <script src="script.js"></script>
+    <script src="./app/script.js"></script>
+    <script src="./app/playlist.js"></script>
+    <script src="https://kit.fontawesome.com/8c5bd3d475.js" crossorigin="anonymous"></script>
 </html>
