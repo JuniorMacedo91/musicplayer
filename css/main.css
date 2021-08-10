@@ -23,7 +23,9 @@ body{
 }
 
 .dark-mode{
+    background: url(../assets/images/black-fone.png) bottom -3rem left -6rem no-repeat;
     background-color: var(--dark-bgColor);
+    background-size: 480px;
     color: white;
 }
 
@@ -67,7 +69,7 @@ i:active{
 
 #duration{
     margin-top: 2rem;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 #darkMode-btn{
@@ -98,7 +100,7 @@ i:active{
     position: absolute;
     font-size: 3.53rem;
     color: var(--rose-red);
-    left: 1.5rem;
+    left: 1rem;
     bottom: 1rem;
 }
 
@@ -126,8 +128,9 @@ i:active{
 #song-range{
     -webkit-appearance: none;
     width: 100%;
+    height: 5px;
     margin: 1rem auto 4rem;
-    height: 3px;
+    border-radius: 30px;
     background-image: linear-gradient(to right, white, var(--rose-red));
 }
 
@@ -147,3 +150,4 @@ i:active{
 .btn-active{
     color: var(--rose-red);
 }
+
