@@ -54,11 +54,11 @@ i:active{
 #container-wrapper{
     position: relative;
     display: grid;
-    grid-template-rows: 8vh 52vh 10vh ;
+    grid-template-rows: 8% 52% 10% ;
     width: 100%;
     height: 100vh;
     padding: 1rem;
-    border-radius: 10px;
+    overflow: hidden;
 }
 
 #top-icons{

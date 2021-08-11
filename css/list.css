@@ -12,7 +12,7 @@
 
 ul{
     position: relative;
-    height: 93vh;
+    max-height:93vh;
     backdrop-filter: blur(40px);
     overflow-y:scroll;
     z-index: 1;
@@ -25,12 +25,12 @@ ul::-webkit-scrollbar{
 li{
     position: relative;
     display: grid;
-    grid-template-columns: 20vw 55vw 10vw;
     justify-content: space-between;
     align-items: center;
+    grid-template-columns: 20% 55% 10%;
     margin: 5px 0;
-    border-radius: 4rem;
     padding: 3px 10px;
+    border-radius: 4rem;
 }
 
 li:hover{
