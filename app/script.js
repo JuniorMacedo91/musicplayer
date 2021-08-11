@@ -1,4 +1,5 @@
 var playlist_box = document.querySelector('.list-container')
+var container_wrapper = document.querySelector('#container-wrapper')
 var darkMode_btn = document.querySelector('#darkMode-btn')
 var play = document.querySelector('.play-btn')
 var rewind_btn = document.querySelector('#rewind-btn')
@@ -20,10 +21,10 @@ playlist_btn.addEventListener('click', function(){
 
 
 
-document.querySelector('#container').setAttribute('class', localStorage.getItem('darkmode_on'))
+document.querySelector('#container-wrapper').setAttribute('class', localStorage.getItem('darkmode_on'))
 
 darkMode_btn.addEventListener('click', function(){
-    if(container.classList.toggle('dark-mode')){
+    if(container_wrapper.classList.toggle('dark-mode')){
         localStorage.setItem('darkmode_on', 'dark-mode')
     } else{
         localStorage.removeItem('darkmode_on')
