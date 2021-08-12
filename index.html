@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/list.css">
     <link rel="stylesheet" href="./css/mediaquerie.css">
+    <link rel="stylesheet" href="./css/keyframes.css">
 </head>
 <body>
     <div id="container">
@@ -15,8 +16,21 @@
             <img id="bgImage-home" src="./assets/images/white-fone.png" alt="">
             <div id="top-icons">
                 <i id="list-btn" class="fas fa-list-ul"></i>
-                <p id="duration">0:00</p>
+                <div class="song-waves">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
                 <i id="darkMode-btn" class="fas fa-moon"></i>
+            </div>
+
+            <div id="song-name-box">    
+                <p id="song-name">Movimento da sanfoninha</p>
+                <p id="artist-name">Anitta</p>
             </div>
 
             <div id="circle-line">
@@ -26,18 +40,22 @@
                 </div>
             </div>
 
-            <div id="song-name-box">    
-                <p id="song-name">Movimento da sanfoninha</p>
-                <p id="artist-name">Anitta</p>
-            </div>
-
             <div id="controls-and-range-box">
-                <i id="rewind-btn" class="fas fa-backward"></i>
-                <i id="foward-btn" class="fas fa-forward"></i>
+                
+                <div class="control-buttons">
+                    <p id="current-time">0:00</p>
+                    <i id="rewind-btn" class="fas fa-backward"></i>
+                    <i id="foward-btn" class="fas fa-forward"></i>
+                    <p id="duration">0:00</p>
+                </div>
+
                 <input id="song-range" type="range" name="song-range" id="song-range" min="0" max="0">
-                <i id="randon-btn" class="fas fa-random"></i>
-                <i id="loop-btn" class="fas fa-sync"></i>
-                <i id="lyrics-btn" class="fab fa-amilia"></i>
+
+                <div class="footer-buttons">
+                    <i id="randon-btn" class="fas fa-random"></i>
+                    <i id="loop-btn" class="fas fa-sync"></i>
+                    <i id="lyrics-btn" class="fab fa-amilia"></i>
+                </div>
             </div>
 
             <div class="list-container">
