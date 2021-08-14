@@ -83,6 +83,28 @@ body{
     box-shadow: 0px 0px 20px 2px rgb(152, 152, 152);
 }
 
+#show-lyrics{
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(238, 238, 238, 0.2);
+    backdrop-filter: blur(50px);
+    font-weight: lighter;
+    overflow-y:scroll;
+}
+
+#show-lyrics::-webkit-scrollbar{
+    width: 7px;
+}
+
+#show-lyrics::-webkit-scrollbar-thumb{
+    background-color: rgb(206, 206, 206);
+    border-radius: 5px;
+}
+
  .play-btn, .pause-btn{
     position: absolute;
     font-size: 3.53rem;
@@ -98,7 +120,7 @@ body{
 }
 
 #artist-name{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: lighter;
     line-height: 1.5rem;
 }

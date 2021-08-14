@@ -1,12 +1,12 @@
-.song-waves{
-    display:flex;
-    align-items: center;
+#song-waves{
+    display:none;
     justify-content: center;
+    margin-top: -4px;
 }
 
 .bar{
-    width: 5px;
-    height: 35px;
+    width: 3px;
+    height: 25px;
     background-image: linear-gradient(to bottom, #FE0341, #02f6fa);
     margin:4px;
     border-radius: 30px;
