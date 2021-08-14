@@ -16,7 +16,7 @@
             <img id="bgImage-home" src="./assets/images/white-fone.png" alt="">
             <div id="top-icons">
                 <i id="list-btn" class="fas fa-list-ul"></i>
-                <div class="song-waves">
+                <div id="song-waves" >
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -29,15 +29,17 @@
             </div>
 
             <div id="song-name-box">    
-                <p id="song-name">Movimento da sanfoninha</p>
-                <p id="artist-name">Anitta</p>
+                <p id="song-name"></p>
+                <p id="artist-name"></p>
             </div>
 
             <div id="circle-line">
                 <div id="circle-picture-div">
-                    <img id="singer-picture" src="./assets/images/anitta.jpg" alt="Singer picture">
+                    <img id="singer-picture" src="" alt="Singer picture">
                     <i class="play-btn fas fa-play-circle"></i>
                 </div>
+
+                <p id="show-lyrics"></p>
             </div>
 
             <div id="controls-and-range-box">
@@ -63,9 +65,10 @@
             </div>
 
         </div>
+
     </div>
 </body>
-    <script src="./app/script.js"></script>
-    <script src="./app/playlist.js"></script>
+    <script type="module" src="./app/main.js"></script>
+    <script src="./app/utils.js"></script>
     <script src="https://kit.fontawesome.com/8c5bd3d475.js" crossorigin="anonymous"></script>
 </html>
