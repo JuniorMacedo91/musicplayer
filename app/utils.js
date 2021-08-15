@@ -10,7 +10,6 @@ const lyrics_btn = document.querySelector('#lyrics-btn')
 
 
 document.querySelector('#container-wrapper').setAttribute('class', localStorage.getItem('darkmode_on'))
-play.addEventListener('click', toggle_play_pause)
 
 
 playlist_btn.addEventListener('click', function(){
@@ -30,13 +29,19 @@ darkMode_btn.addEventListener('click', function(){
     }
 })
 
-function toggle_play_pause(){
-    if(play.classList == 'play-btn fas fa-play-circle'){
-        play.classList = 'pause-btn fas fa-pause-circle';
-        song_waves.style.display='flex';
-    } else{
-        play.classList = 'play-btn fas fa-play-circle';
-        song_waves.style.display='none';
-    }
-}
+randon_btn.addEventListener('click', function(){
+    randon_btn.classList.toggle('btn-active')
+})
 
+loop_btn.addEventListener('click', function(){
+    loop_btn.classList.toggle('btn-active')
+})
+
+
+lyrics_btn.addEventListener('click', function(){
+    if(lyrics_btn.classList.toggle('btn-active')){
+        document.querySelector('#show-lyrics').style.display='block'
+    } else{
+        document.querySelector('#show-lyrics').style.display='none'
+    }
+})

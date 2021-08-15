@@ -15,49 +15,49 @@
         title: 'Sinto sua Falta',
         artist:'Ferrugem',
         cover:'./assets/images/ferrugem.jpeg',
-        file:'Sinto sua Falta.mp3'
+        file:'./assets/songs/Sinto sua Falta.mp3'
     },
     {
         title:'Ouvi dizer',
         artist: 'Melim',
         cover:'./assets/images/melim.jpg',
-        file:'Ouvi Dizer.mp3',
+        file:'./assets/songs/Ouvi Dizer.mp3',
     },
     {
         title:'Movimento da sanfoninha',
         artist:'Anitta',
         cover:'./assets/images/anitta.jpg',
-        file:'Movimento da sanfoninha.mp3',
+        file:'./assets/songs/Movimento da sanfoninha.mp3',
     },
     {
         title:'Perigosinha',
         artist: 'Claudia Leitte',
         cover:'./assets/images/claudia.jpg',
-        file:'Perigosinha.mp3',
+        file:'./assets/songs/Perigosinha.mp3',
     },
     {
         title:'Qué fue del amor',
         artist:'RBD',
         cover:'./assets/images/rbd.jpg',
-        file:'Qué Fue Del Amor.mp3',
+        file:'./assets/songs/Qué Fue Del Amor.mp3',
     },
     {
         title:'This is me',
         artist:'The Greatest Showman',
         cover:'./assets/images/showman.jpg',
-        file:'This Is Me.mp3'
+        file:'./assets/songs/This Is Me.mp3'
     },
     {
         title:'Something Beautiful',
         artist:'Tim Halperin',
         cover:'./assets/images/tim.jpg',
-        file:'Something Beautiful.mp3'
+        file:'./assets/songs/Something Beautiful.mp3'
     },
     {
         title:'Ariga Tchan',
         artist:'É o tchan',
         cover:'./assets/images/tchan.jpeg',
-        file:'ArigaTchan.mp3'
+        file:'./assets/songs/ArigaTchan.mp3'
     },
 ];
 
@@ -85,5 +85,4 @@ for(var song of playlist){
     music_list.appendChild(list)
     list.innerHTML += `<i class="play-btn fas fa-play-circle"></i>`
 }
-
 
