@@ -1,3 +1,5 @@
+import {audio} from './main.js'
+
 const playlist_box = document.querySelector('.list-container')
 const container_wrapper = document.querySelector('#container-wrapper')
 const playlist_btn = document.querySelector('#list-btn')
@@ -7,9 +9,6 @@ const play = document.querySelector('.play-btn')
 const randon_btn = document.querySelector('#randon-btn')
 const loop_btn = document.querySelector('#loop-btn')
 const lyrics_btn = document.querySelector('#lyrics-btn')
-
-
-document.querySelector('#container-wrapper').setAttribute('class', localStorage.getItem('darkmode_on'))
 
 
 playlist_btn.addEventListener('click', function(){
@@ -33,9 +32,11 @@ randon_btn.addEventListener('click', function(){
     randon_btn.classList.toggle('btn-active')
 })
 
-loop_btn.addEventListener('click', function(){
-    loop_btn.classList.toggle('btn-active')
-})
+function loop(){
+    if(loop_btn.classList.toggle('btn-active')){
+        
+    }
+}
 
 
 lyrics_btn.addEventListener('click', function(){
