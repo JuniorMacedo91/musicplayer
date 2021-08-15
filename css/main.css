@@ -72,8 +72,8 @@ body{
 #circle-line{
     display: grid;
     position: relative;
-    width: 280px;
-    height: 280px;
+    width: 310px;
+    height: 310px;
     border:2px solid var(--gray);
     border-left: transparent;
     border-bottom: transparent;
@@ -81,7 +81,7 @@ body{
 }
 
 #singer-picture{
-    width: 230px;
+    width: 265px;
     border-radius: 50%;
     box-shadow: 0px 0px 20px 2px rgb(152, 152, 152);
 }
@@ -110,9 +110,9 @@ body{
 
  .play-btn, .pause-btn{
     position: absolute;
-    font-size: 3.53rem;
+    font-size: 3.5rem;
     color: var(--rose-red);
-    left: 1rem;
+    left: 2rem;
     bottom: 1rem;
 }
 
