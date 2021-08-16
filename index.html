@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicPlayer</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/list.css">
     <link rel="stylesheet" href="./css/mediaquerie.css">
     <link rel="stylesheet" href="./css/keyframes.css">
@@ -38,37 +39,29 @@
                     <img id="singer-picture" src="" alt="Singer picture">
                     <i class="play-btn fas fa-play-circle"></i>
                 </div>
-
-                <p id="show-lyrics"></p>
             </div>
 
             <div id="controls-and-range-box">
                 
+                <i id="loop-btn" class="fas fa-sync"></i>
+
                 <div class="control-buttons">
-                    <p id="current-time">0:00</p>
+                    <p id="current-time">00:00</p>
                     <i id="rewind-btn" class="fas fa-backward"></i>
                     <i id="foward-btn" class="fas fa-forward"></i>
-                    <p id="duration">0:00</p>
+                    <p id="duration"></p>
                 </div>
 
                 <input id="seekbar" type="range" name="song-range" id="song-range" min="0" max="0" step="1">
-
-                <div class="footer-buttons">
-                    <i id="randon-btn" class="fas fa-random"></i>
-                    <i id="loop-btn" class="fas fa-sync"></i>
-                    <i id="lyrics-btn" class="fab fa-amilia"></i>
-                </div>
             </div>
 
             <div class="list-container">
                 <ul id="music_list"></ul>
             </div>
-
         </div>
-
     </div>
 </body>
     <script type="module" src="./app/main.js"></script>
-    <script src="./app/utils.js"></script>
+    <script type="module" src="./app/utils.js"></script>
     <script src="https://kit.fontawesome.com/8c5bd3d475.js" crossorigin="anonymous"></script>
 </html>
