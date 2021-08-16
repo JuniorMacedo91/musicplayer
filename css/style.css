@@ -1,0 +1,109 @@
+.dark-mode{
+    background: url(../assets/images/black-fone.png) bottom -3rem left -6rem no-repeat;
+    background-color: var(--dark-bgColor);
+    background-size: 450px;
+    color: white;
+}
+
+#bgImage-home{
+    position: absolute;
+    width: 450px;
+    bottom: -3rem;
+    left: -6rem;
+    z-index: -1;
+}
+
+#top-icons{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+#darkMode-btn, .btn-active{
+    color: var(--rose-red);
+}
+
+#circle-picture-div, #circle-line, #show-lyrics {
+    display: grid;
+    place-items: center;
+    place-self: center;
+}
+
+#circle-line{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border:2px solid var(--gray);
+    border-left: transparent;
+    border-bottom: transparent;
+    border-radius: 50%;
+}
+
+#singer-picture{
+    width: 270px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 2px rgb(152, 152, 152);
+}
+
+ .play-btn, .pause-btn{
+    position: absolute;
+    font-size: 4rem;
+    color: var(--rose-red);
+    left: 2rem;
+    bottom: 1rem;
+}
+
+#song-name-box{
+    padding: 0 1rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#artist-name, #duration, #current-time{
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: 1.5rem;
+}
+
+.control-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#controls-and-range-box{
+    text-align: end;
+}
+
+#rewind-btn, #foward-btn {
+    margin: 0 -4rem;
+    font-size: 2.5rem;
+    color: var(--rose-red);
+}
+
+#seekbar{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    margin: 1rem auto 4rem;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, white, var(--rose-red));
+}
+
+#seekbar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 5px;
+    height: 22px;
+    background-color: var(--rose-red);
+    border-radius: 10px;
+}
+
+i{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+i:active{
+    transform: scale(.9);
+}

@@ -54,10 +54,3 @@ li > img{
     font-weight: lighter;
 }
 
-li .play-btn{
-    position: relative;
-    top: 0;
-    left: 0;
-    font-size: 2rem;
-    color: var(--rose-red);
-}
