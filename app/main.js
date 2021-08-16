@@ -1,5 +1,3 @@
-import { playlist } from "./playlist.js"
-
 const playPause = document.querySelector('.play-btn')
 const rewind_btn = document.querySelector('#rewind-btn')
 const foward_btn = document.querySelector('#foward-btn')
@@ -16,7 +14,7 @@ onload= function(){
 }
 
 var pos = 0;
-export var audio = new Audio()
+var audio = new Audio()
 
 function load_song(){
     song_name.innerHTML = playlist[pos].title
@@ -26,9 +24,11 @@ function load_song(){
     seekbar.max = audio.duration
 }
 
+
 audio.onloadeddata = function(){
     total_duration.innerText = time_converter(audio.duration)
 }
+
 
 function updateTime(){
     seekbar.value = audio.currentTime
@@ -36,9 +36,11 @@ function updateTime(){
     current_time.innerHTML = time_converter(audio.currentTime)
 }
 
+
 seekbar.addEventListener('input', function(){
     audio.currentTime = seekbar.value
 })
+
 
 function play_pause(){
     if(audio.paused){
@@ -52,6 +54,7 @@ function play_pause(){
     }
 }
 
+
 function next(){
     (pos < playlist.length)? pos++: pos= pos;
     playPause.classList = 'pause-btn fas fa-pause-circle'
@@ -59,6 +62,7 @@ function next(){
     load_song()
     audio.play()
 }
+
 
 function prev(){
     (pos > 0)? pos--:pos = pos;
@@ -68,6 +72,7 @@ function prev(){
     audio.play()
 }
 
+
 function time_converter(time){
     const min = Math.floor(time / 60)
     const sec = Math.floor(time % 60)
@@ -75,9 +80,13 @@ function time_converter(time){
     return `${("0" + min).slice(-2)}:${("0" + sec).slice(-2)}` 
 }
 
+
 rewind_btn.addEventListener('click', prev)
 foward_btn.addEventListener('click', next)
 playPause.addEventListener('click', play_pause)
 audio.addEventListener('ended', next)
 audio.addEventListener('timeupdate', updateTime)
 
+
+import { playlist } from "./playlist.js"
+export{audio, load_song}

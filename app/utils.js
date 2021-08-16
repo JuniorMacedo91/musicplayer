@@ -1,12 +1,7 @@
-import {audio} from './main.js'
-
 const playlist_box = document.querySelector('.list-container')
 const container_wrapper = document.querySelector('#container-wrapper')
 const playlist_btn = document.querySelector('#list-btn')
-const song_waves = document.getElementById('song-waves')
 const darkMode_btn = document.querySelector('#darkMode-btn')
-const play = document.querySelector('.play-btn')
-const randon_btn = document.querySelector('#randon-btn')
 const loop_btn = document.querySelector('#loop-btn')
 const lyrics_btn = document.querySelector('#lyrics-btn')
 
@@ -28,21 +23,15 @@ darkMode_btn.addEventListener('click', function(){
     }
 })
 
-randon_btn.addEventListener('click', function(){
-    randon_btn.classList.toggle('btn-active')
-})
 
-function loop(){
+loop_btn.addEventListener('click', function(){
     if(loop_btn.classList.toggle('btn-active')){
-        
-    }
-}
-
-
-lyrics_btn.addEventListener('click', function(){
-    if(lyrics_btn.classList.toggle('btn-active')){
-        document.querySelector('#show-lyrics').style.display='block'
+        audio.loop = true
     } else{
-        document.querySelector('#show-lyrics').style.display='none'
+        audio.loop = false
     }
 })
+
+document.querySelector('#container-wrapper').setAttribute('class', localStorage.getItem('darkmode_on'))
+
+import{audio, load_song} from './main.js'

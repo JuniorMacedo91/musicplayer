@@ -63,9 +63,6 @@
 
 var music_list = document.querySelector('#music_list')
 
-document.querySelector('#container-wrapper').setAttribute('class', localStorage.getItem('darkmode_on'))
-
-
 for(var song of playlist){
     var list = document.createElement('li')
     var image = document.createElement('img')
@@ -86,5 +83,5 @@ for(var song of playlist){
     music_content.appendChild(song_name)
     music_content.appendChild(artist_name)
     music_list.appendChild(list)
-    list.innerHTML += `<i class="play-btn fas fa-play-circle"></i>`
+    list.innerHTML += `<i class="fas fa-music"></i>`
 }
