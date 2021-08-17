@@ -1,18 +1,26 @@
 # musicplayer
-Player de musica para compreender métodos relacionados a áudio e vídeo, trabalhando com JavaScript.
+Player de musica para aprender sobre métodos relacionados a áudio e vídeo, trabalhando com JavaScript.
 
 ## Projeto:
 
 <p align="center">
-  <img src="responsive.png" width="100%">
+  <img src="cover.png" width="750px">
+</p>
+
+## Layout Responsivo:
+<p align="center">
+  <img src="layout.png" width="750px">
 </p>
 
 ## Descrição:
-
-
-## Ferramentas de JavaScript:
+O foco desse projeto foi compreender e colocar em prática, alguns métodos que podemos utilizar para manipular audio e video, com JavaScript. Além de aperfeiçoar o conhecimento sobre funções, arrays e objetos.
 
 ## Principais desafios:
+- Desenvolver a lógica para elaborar cada mecanismo;
+- Colocar em prática os conceitos de um código limpo e organizado, evitando repetições;
+- Como usar função dentro de outra;
+- Acessar propriedades de um objeto;
+- Importar e Exportar módulos;
 
 ## Tecnologias:
 
